@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* 基礎のスタイル */
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;1,100&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    margin-top: unset !important;
+    font-family: 'YuGothic';
+    font-size: 15px;
+}
+a {
+    text-decoration: none !important;
+    @include transition-all;
+}
+
+* a {
+    text-decoration: none !important;
+    color: unset;
+}
+
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pc,
+.tb,
+.sp {
+    display: none;
+}
+
+.container {
+    max-width: 1416px;
+    margin: auto;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+.sp-show {
+    display: none !important;
+}
+@media screen and (min-width: 1025px) {
+    span {
+        &.pc {
+            display: inline-block;
+        }
+    }
+    .pc {
+        display: block;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .tb {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 4vw;
+    }
+    .sp-show {
+        display: inline-block !important;
+    }
+    span {
+        &.sp {
+            display: inline-block;
+        }
+    }
+    .sp {
+        display: block;
+    }
+    .container {
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+}
