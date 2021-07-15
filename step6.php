@@ -96,7 +96,7 @@
                                 <select id="age" class="age">
                                     <option value="">選択してください</option>
                                 <?php
-                                for ($i = 18; $i < 100; $i++) {
+                                for ($i = 18; $i < 49; $i++) {
                                 ?>
                                     <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                                 <?php
@@ -179,7 +179,7 @@
                             <select id="age-sp" class="age">
                                 <option value="">選択してください</option>
                                 <?php
-                                for ($i = 18; $i < 100; $i++) {
+                                for ($i = 18; $i < 49; $i++) {
                                 ?>
                                     <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                                 <?php

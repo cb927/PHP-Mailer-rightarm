@@ -30,7 +30,7 @@
         <nav class="navbar">
             <div class="nav__logo">
                 <img src="./assets/img/logo.png" alt="" class="logo__img">
-                
+
             </div>
             <p class="nav__text">ITエンジニア専門 フリーランスエージェント</p>
         </nav>
@@ -95,6 +95,7 @@
                             <div class="btn__item">ビックデータ<span style="display: none;">,</span></div>
                             <div class="btn__item">その他<span style="display: none;">,</span></div>
                         </div>
+                        <div id="error-select"></div>
                     </div>
                 </div>
                 <div class="content__multi-text pc">
@@ -160,6 +161,7 @@
                         <div class="btn__item">ビックデータ<span style="display: none;">,</span></div>
                         <div class="btn__item">その他<span style="display: none;">,</span></div>
                     </div>
+                    <div id="error-select-sp"></div>
                 </div>
             </div>
             <div class="content__multi-text sp">
@@ -184,6 +186,7 @@
     </footer>
     <script>
         $(document).ready(function() {
+            var error_select = `<p style="color: red; text-align: center;">※選択をお願いいたします</p>`;
             var step4 = localStorage.getItem('step4');
             if (step4 != '' && step4 != null) {
                 var array = step4.split(',');
@@ -207,6 +210,8 @@
                 if (step4 != '') {
                     localStorage.setItem('step4', step4);
                     location.href = 'step5.php';
+                } else {
+                    $('#error-select').html(error_select);
                 }
             })
 
@@ -216,6 +221,8 @@
                 if (step4 != '') {
                     localStorage.setItem('step4', step4);
                     location.href = 'step5.php';
+                } else {
+                    $('#error-select-sp').html(error_select);
                 }
             })
         })

@@ -30,7 +30,7 @@
         <nav class="navbar">
             <div class="nav__logo">
                 <img src="./assets/img/logo.png" alt="" class="logo__img">
-                
+
             </div>
             <p class="nav__text">ITエンジニア専門 フリーランスエージェント</p>
         </nav>
@@ -92,12 +92,14 @@
                             <div class="btn__item">130~150万<span style="display: none;">,</span></div>
                             <div class="btn__item">150万~<span style="display: none;">,</span></div>
                         </div>
+                        <div id="error-select"></div>
                     </div>
                     <div class="main__form">
-                        <div class="form__item form__item--station">
-                            <p class="form-label">最寄り駅</p>
+                        <div class="form__item">
+                            <p class="form-label">最寄り駅 <span class="badge">必須</span></p>
                             <div class="form-control">
-                                <input type="text" placeholder="例）東京駅">
+                                <input type="text" id="station" placeholder="例）東京駅">
+                                <div class="error-station"></div>
                             </div>
                         </div>
                     </div>
@@ -160,12 +162,14 @@
                     <div class="fit-content">
                         <div class="btn__item">150万~<span style="display: none;">,</span></div>
                     </div>
+                    <div id="error-select-sp"></div>
                 </div>
                 <div class="main__form">
-                    <div class="form__item form__item--station">
-                        <p class="form-label">最寄り駅</p>
+                    <div class="form__item">
+                        <p class="form-label">最寄り駅 <span class="badge">必須</span></p>
                         <div class="form-control">
-                            <input type="text" placeholder="例）東京駅">
+                            <input type="text" id="station-sp" placeholder="例）東京駅">
+                            <div class="error-station-sp"></div>
                         </div>
                     </div>
                 </div>
@@ -192,6 +196,8 @@
     </footer>
     <script>
         $(document).ready(function() {
+            var error_select = `<p style="color: red; text-align: center;">※選択をお願いいたします</p>`;
+            var errorMessage = '<p style="color: red; text-align: left;">※必須項目です</p>';
             var step5 = localStorage.getItem('step5');
             var station = localStorage.getItem('station');
             $('.form-control input').val(station);
@@ -215,11 +221,18 @@
                 var step5 = '';
                 var station = '';
                 step5 = $('.main__content--pc .btn__item.active').text();
-                station = $('.main__content--pc .form-control input').val();
-                if (step5 != '') {
+                station = $('#station').val();
+                if (step5 != '' && station != '') {
                     localStorage.setItem('step5', step5);
                     localStorage.setItem('station', station);
                     location.href = 'step6.php';
+                } else {
+                    if (step5 == '') {
+                        $('#error-select').html(error_select);
+                    }
+                    if (station == '') {
+                        $('.error-station').html(errorMessage);
+                    }
                 }
             })
 
@@ -227,11 +240,18 @@
                 var step5 = '';
                 var station = '';
                 step5 = $('.main__content--sp .btn__item.active').text();
-                station = $('.main__content--sp .form-control input').val();
-                if (step5 != '') {
+                station = $('#station-sp').val();
+                if (step5 != '' && station != '') {
                     localStorage.setItem('step5', step5);
                     localStorage.setItem('station', station);
                     location.href = 'step6.php';
+                } else {
+                    if (step5 == '') {
+                        $('#error-select-sp').html(error_select);
+                    }
+                    if (station == '') {
+                        $('.error-station-sp').html(errorMessage);
+                    }
                 }
             })
         })
