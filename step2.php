@@ -81,6 +81,9 @@
                     <p class="title__top"><span>STEP02</span></p>
                     <p class="title__main">ご希望の職種</p>
                 </div>
+                <div class="content__multi-text pc">
+                    <p>※複数選択可</p>
+                </div>
                 <div class="content__main">
                     <div class="main__btns">
                         <div class="btn__line">
@@ -102,9 +105,6 @@
                         </div>
                         <div id="error-select"></div>
                     </div>
-                </div>
-                <div class="content__multi-text pc">
-                    <p>※複数選択可</p>
                 </div>
                 <div class="content__next">
                     <a href="#!" class="next__btn" id="next">次へ</a>

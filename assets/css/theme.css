@@ -117,7 +117,6 @@ main {
   max-width: 1240px;
   margin: 60px auto 0;
   width: 100%;
-  padding-top: 30px;
   padding-bottom: 60px;
   padding-right: 20px;
   padding-left: 20px; }
@@ -198,11 +197,11 @@ main {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
   main .main__content {
-    padding: 100px 0 200px;
+    padding: 30px 0 150px;
     text-align: center;
     border: 2px solid #3081C6; }
     main .main__content .content__title {
-      margin-bottom: 30px; }
+      margin-bottom: 10px; }
       main .main__content .content__title .title__top {
         margin-bottom: 20px;
         position: relative; }
@@ -326,7 +325,7 @@ main {
           main .main__content .content__main .main__form .form__item.form__item--station .form-label {
             width: fit-content; }
     main .main__content .content__multi-text {
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
       main .main__content .content__multi-text p {
         font-size: 15px;
         color: #3081C6; }
