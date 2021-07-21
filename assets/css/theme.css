@@ -623,6 +623,12 @@ footer {
               padding: 3vw 3vw;
               font-size: 4vw;
               margin-bottom: 4vw; }
+              main .main__content.main__content--sp .content__main .main__btns .btn__item:hover {
+                background: white;
+                color: #3081C6; }
+              main .main__content.main__content--sp .content__main .main__btns .btn__item.active {
+                background: #3081C6;
+                color: white; }
             main .main__content.main__content--sp .content__main .main__btns .btn__line {
               display: grid;
               grid-template-columns: 48% 48%;

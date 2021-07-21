@@ -653,6 +653,14 @@ footer {
                             padding: 3vw 3vw;
                             font-size: 4vw;
                             margin-bottom: 4vw;
+                            &:hover {
+                                background: white;
+                                color: $color-blue1;
+                            }
+                            &.active {
+                                background: $color-blue1;
+                                color: white;
+                            }
                         }
                         .btn__line {
                             display: grid;
