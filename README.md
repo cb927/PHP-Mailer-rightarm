@@ -2,6 +2,6 @@
 
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://github.com/cb927/PHP-Mailer-rightarm/blob/master/Screenshot.png" alt="Page index" width="950" height="475">
   </a>
 </p>
