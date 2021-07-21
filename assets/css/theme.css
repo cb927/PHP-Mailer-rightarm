@@ -681,6 +681,12 @@ footer {
               padding: 3vw 3vw;
               font-size: 4vw;
               margin-bottom: 4vw; }
+              main.index .main__content.main__content--sp .content__main .main__btns .btn__item:hover {
+                background: white;
+                color: #3081C6; }
+              main.index .main__content.main__content--sp .content__main .main__btns .btn__item.active {
+                background: #3081C6;
+                color: white; }
 
   footer {
     padding: 3.3vw 0; }
