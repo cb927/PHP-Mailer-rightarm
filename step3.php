@@ -155,6 +155,9 @@
             </div>
         </div>
         <div class="main__content main__content--sp">
+            <div class="content__multi-text sp">
+                <p>※複数選択可</p>
+            </div>
             <div class="content__main">
                 <div class="main__btns">
                     <div class="btn__line">
@@ -191,9 +194,6 @@
                     </div>
                     <div id="error-select-sp"></div>
                 </div>
-            </div>
-            <div class="content__multi-text sp">
-                <p>※複数選択可</p>
             </div>
             <div class="content__next">
                 <a href="#!" class="next__btn" id="next-sp">次へ</a>
