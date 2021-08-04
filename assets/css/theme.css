@@ -119,9 +119,11 @@ main {
   width: 100%;
   padding-bottom: 60px;
   padding-right: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  height: calc(100vh - 60px); }
   main.index {
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: unset; }
     main.index .main__content {
       padding: 50px 20px; }
   main .main__step {
@@ -512,6 +514,7 @@ footer {
       border: 0.5vw solid #3081C6; }
 
   main {
+    height: unset;
     width: 100%;
     padding-top: 4vw;
     padding-bottom: 8vw;
@@ -766,7 +769,7 @@ header {
   header {
     padding: 1.8vw 5vw; }
     header .navbar .nav__logo {
-      margin-right: 6.67vw; }
+      margin-right: 3vw; }
       header .navbar .nav__logo .logo__img {
         height: 8vw; }
       header .navbar .nav__logo span {

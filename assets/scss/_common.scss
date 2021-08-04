@@ -51,8 +51,10 @@ main {
     padding-bottom: 60px;
     padding-right: 20px;
     padding-left: 20px;
+    height: calc(100vh - 60px);
     &.index {
         margin: 0 auto;
+        height: unset;
         .main__content {
             padding: 50px 20px;
         }
@@ -503,6 +505,7 @@ footer {
         }
     }
     main {
+        height: unset;
         width: 100%;
         padding-top: 4vw;
         padding-bottom: 8vw;
