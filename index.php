@@ -84,7 +84,7 @@
                     <p class="title__top"><span>STEP01</span></p>
                     <p class="title__main">ご希望の案件開始時期</p>
                 </div>
-                <div class="content__multi-text pc">
+                <div class="content__multi-text pc tb">
                     <p>※複数選択可</p>
                 </div>
                 <div class="content__main">

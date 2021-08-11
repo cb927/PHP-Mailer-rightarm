@@ -81,7 +81,7 @@
                     <p class="title__top"><span>STEP03</span></p>
                     <p class="title__main">得意な言語</p>
                 </div>
-                <div class="content__multi-text pc">
+                <div class="content__multi-text pc tb">
                     <p>※複数選択可</p>
                 </div>
                 <div class="content__main">
@@ -91,18 +91,16 @@
                             <div class="btn__item">JavaScript<span style="display: none;">,</span></div>
                             <div class="btn__item">PHP<span style="display: none;">,</span></div>
                             <div class="btn__item">Ruby<span style="display: none;">,</span></div>
-                        </div>
-                        <div class="btn__line">
                             <div class="btn__item">Python<span style="display: none;">,</span></div>
                             <div class="btn__item">C/C#<span style="display: none;">,</span></div>
-                            <div class="btn__item">Go言語<span style="display: none;">,</span></div>
-                            <div class="btn__item">.NET<span style="display: none;">,</span></div>
                         </div>
                         <div class="btn__line">
+                            <div class="btn__item">Go言語<span style="display: none;">,</span></div>
+                            <div class="btn__item">.NET<span style="display: none;">,</span></div>
                             <div class="btn__item">iOS<span style="display: none;">,</span></div>
                             <div class="btn__item">Android<span style="display: none;">,</span></div>
-                            <div class="btn__item">HTML/CSS<span style="display: none;">,</span></div>
                             <div class="btn__item">UI/UX<span style="display: none;">,</span></div>
+                            <div class="btn__item">HTML/CSS<span style="display: none;">,</span></div>
                         </div>
                         <div class="btn__line">
                             <div class="btn__item">サーバー系<span style="display: none;">,</span></div>

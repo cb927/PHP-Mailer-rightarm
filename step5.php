@@ -81,7 +81,7 @@
                     <p class="title__top"><span>STEP05</span></p>
                     <p class="title__main">ご希望単金と<br class="sp">最寄り駅を<br class="sp">教えてください</p>
                 </div>
-                <div class="content__multi-text pc">
+                <div class="content__multi-text pc tb">
                     <p>※複数選択可</p>
                 </div>
                 <div class="content__main">
